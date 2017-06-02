@@ -1,5 +1,9 @@
-import shutil
-shutil.rmtree('dataset')
+import os
+file_list = os.listdir(r'.')
+for file_name in file_list:
+    if file_name == 'dataset':
+        import shutil
+        shutil.rmtree('dataset')
 
 
 import requests
